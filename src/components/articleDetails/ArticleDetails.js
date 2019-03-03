@@ -13,7 +13,7 @@ class ArticleDetails extends Component {
 		return (
 			<div>
 				<h2>{title}</h2>
-				<p>Author: {byline}</p>
+				<p>{byline}</p>
 				{!this.state.showMore && (
 					<span onClick={this.changeState}>Show More</span>
 				)}
