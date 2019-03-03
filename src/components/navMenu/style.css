@@ -1,9 +1,9 @@
 .menu{
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 50px;
   width: 20%;
-  height: 92vh;
+  height: 100%;
   background: #003f72;
   opacity: 0.8;
 }
@@ -15,10 +15,8 @@
 	line-height: 56px;
 	padding: 0 15px;
 	min-width: 50px;
-	background: rgba(255,255,255,0);
 	text-decoration: none;
 	color: #fff;
-	will-change: background-color;
 }
 
 .menu nav a:hover,
@@ -26,6 +24,6 @@
 	background: rgba(0,0,0,0.2);
 }
 
-.menu nav a.active {
+.activeclass {
 	background: rgba(0,0,0,0.4);
 }

@@ -2,7 +2,6 @@ import { h, Component } from 'preact';
 import { connect } from 'preact-redux';
 import ACTIONS from '../../api-config/actions.constants';
 import List from '../list/List';
-import style from './style';
 
 class Books extends Component {
 	componentDidMount() {

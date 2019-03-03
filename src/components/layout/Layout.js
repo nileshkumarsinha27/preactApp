@@ -5,10 +5,10 @@ import style from './style';
 const Layout = props => (
 	<article class={style.layout}>
 		<Header />
-		<aside>
+		<section>
 			<NavMenu />
-		</aside>
-		<section>{props.children}</section>
+			{props.children}
+		</section>
 	</article>
 );
 export default Layout;

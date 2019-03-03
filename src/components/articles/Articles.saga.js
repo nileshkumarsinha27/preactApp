@@ -5,32 +5,30 @@ import API from '../../api-config/api.config';
 import ACTIONS from '../../api-config/actions.constants';
 import CONSTANTS from '../../constants.js';
 
-function* getBooks(action) {
+function* getArticles(action) {
 	let response;
-	const url = `${API.bookApi}?api-key=${CONSTANTS.API_KEY}&list=${decodeURI(
-		'hardcover-fiction'
-	)}`;
+	const url = `${API.articleApi}?api-key=${CONSTANTS.API_KEY}`;
 	try {
 		response = yield call(getData, url, action.data);
 		if (response.status === 200) {
-			localStorage.setItem('bookList', JSON.stringify(response.data));
+			localStorage.setItem('articleList', JSON.stringify(response.data));
 			yield put({
-				type: ACTIONS.BOOKS.GET_BOOK_LIST_SUCCESS,
+				type: ACTIONS.ARTICLES.GET_ARTICLES_LIST_SUCCESS,
 				response
 			});
 		}
 		else {
 			yield put({
-				type: ACTIONS.BOOKS.GET_BOOK_LIST_FAIL,
+				type: ACTIONS.ARTICLES.GET_ARTICLES_LIST_FAIL,
 				response
 			});
 		}
 	}
 	catch (e) {
 		yield put({
-			type: ACTIONS.BOOKS.GET_BOOK_LIST_FAIL,
+			type: ACTIONS.ARTICLES.GET_ARTICLES_LIST_FAIL,
 			data: e
 		});
 	}
 }
-export default getBooks;
+export default getArticles;

@@ -4,8 +4,12 @@ import style from './style';
 const NavMenu = () => (
 	<div class={style.menu}>
 		<nav>
-			<Link href="/books">Books</Link>
-			<Link href="/articles">Articles</Link>
+			<Link href="/books" activeClassName={style.activeclass}>
+				Books
+			</Link>
+			<Link href="/articles" activeClassName={style.activeclass}>
+				Articles
+			</Link>
 		</nav>
 	</div>
 );
