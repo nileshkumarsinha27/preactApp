@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Initial Test of the Header it renders snapshot correctly 1`] = `
+RenderContext {
+  "0": T {
+    "attributes": undefined,
+    "children": Array [],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;
