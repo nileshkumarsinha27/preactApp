@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Initial Test of Articles Component it renders snapshot correctly 1`] = `
+RenderContext {
+  "0": T {
+    "attributes": Object {
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+    },
+    "children": Array [
+      T {
+        "attributes": undefined,
+        "children": Array [],
+        "key": undefined,
+        "nodeName": [Function],
+      },
+    ],
+    "key": undefined,
+    "nodeName": [Function],
+  },
+  "length": 1,
+}
+`;

@@ -7,6 +7,10 @@
 }
 .listcontainer li{
   display: inline-grid;
+  display: -webkit-inline-grid;
+  display: -moz-inline-grid;
+  display: -ms-inline-grid;
+  display: -o-inline-grid;
   width: 29%;
   border:1px solid #dbdfe3;
   padding: 2%;
