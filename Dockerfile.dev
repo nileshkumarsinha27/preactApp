@@ -1,0 +1,20 @@
+# Base node Image
+FROM node:alpine
+
+# Maintainer details
+MAINTAINER Shashank S Shetty <smile.shashank.s.shetty1996@gmail.com>
+
+# Working director in docker image
+WORKDIR '/app'
+
+# Copying package.json and package-lock.json file to image
+COPY package.json .
+
+# Installing all the dependance
+RUN npm install
+
+# Copying content from host system to docker image
+COPY . .
+
+# Starting React server.
+CMD ["npm", "run", "dev"]
